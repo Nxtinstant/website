@@ -1,0 +1,2077 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<title>nxtinstant=sigma</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: orange;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: red;
+  color: black;
+}
+</style>
+
+</head>
+
+<div class="header">
+  <h1>nxtinstant</h1>
+
+
+</div>
+
+<div class="topnav">
+
+
+<a href="nxtinstant.in">home</a>
+
+<a href="https://docs.google.com/document/d/1czeU1e8xbGYMNoXkzelwi11gJ7JgDn95Jnpw1Q85K3E/edit?usp=sharing">information</a>
+
+
+  <a href="linktr.ee/a319spaces">buy 1 hour html file</a>
+  <a href="https://codepen.io/nxtinstant/full/poqjQNZ">try database project</a>
+  <a href="youtube.com/@officialnxtinstant">youtube</a>
+
+<a
+href="https://www.patreon.com/nxtinstant">patreon</a>
+
+</div>
+
+<div id="ratingPopup" class="popup" style="display: none;">
+  <h2>Love using nxtinstant? Give us feedback!</h2>
+  <div id="stars">
+    <span class="star" data-value="1">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="5">&#9733;</span>
+  </div>
+  <button id="closePopup">Close</button>
+</div>
+
+<style>.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star:hover {
+  color: gold;
+}
+</style>
+
+<script>// Call showRatingPopup directly
+showRatingPopup();
+
+function showRatingPopup() {
+  var popup = document.getElementById('ratingPopup');
+  if (popup) {
+    popup.style.display = 'block';
+
+    var stars = document.querySelectorAll('.star');
+    stars.forEach(function(star) {
+      star.addEventListener('click', function() {
+        var rating = parseInt(this.getAttribute('data-value'));
+        handleRating(rating);
+      });
+    });
+
+    var closePopupBtn = document.getElementById('closePopup');
+    closePopupBtn.addEventListener('click', function() {
+      popup.style.display = 'none';
+    });
+  } else {
+    console.error('Popup element not found.');
+  }
+}
+
+function handleRating(rating) {
+  var popup = document.getElementById('ratingPopup');
+  if (popup) {
+    popup.style.display = 'none';
+
+    switch (rating) {
+      case 1:
+        alert("Okay, not bad.");
+        break;
+      case 5:
+        alert("Wow, thank youuuuuuuu!");
+        break;
+      default:
+        alert("Thank you for your feedback!");
+        break;
+    }
+  } else {
+    console.error('Popup element not found.');
+  }
+}
+
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+  <meta charset="UTF-8">
+  <title>aryan sabka daddy</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .joke-dashboard {
+      display: none;
+    }
+    #jokeTextBox {
+      width: 80%;
+      height: 100px; /* Adjust the height as needed */
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="showJokeDashboardButton" onclick="toggleJokeDashboard()">Jokes Generator</button>
+
+  <div class="joke-dashboard" id="jokeDashboard">
+    <h2>Jokes Generator</h2>
+    <textarea id="jokeTextBox" placeholder="Generated Joke" readonly></textarea><br><br>
+    <button onclick="generateJoke()">Generate Joke</button>
+  </div>
+
+  <script>
+    function toggleJokeDashboard() {
+      var jokeDashboard = document.getElementById('jokeDashboard');
+      if (jokeDashboard) {
+        if (jokeDashboard.style.display === 'none' || jokeDashboard.style.display === '') {
+          jokeDashboard.style.display = 'block';
+        } else {
+          jokeDashboard.style.display = 'none';
+        }
+      }
+    }
+
+    function generateJoke() {
+      var jokes = [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "Parallel lines have so much in common. It's a shame they'll never meet.", "Why don't scientists trust atoms? Because they make up everything!",
+        "Parallel lines have so much in common. It's a shame they'll never meet.",
+        "Why did the scarecrow win an award? Because he was outstanding in his field!",
+        "What do you get when you cross a snowman with a vampire? Frostbite!",
+        "I told my wife she should embrace her mistakes. She gave me a hug.",
+        "What do you call an alligator in a vest? An investigator!",
+        "Why don’t skeletons fight each other? They don’t have the guts.",
+        "How does a penguin build its house? Igloos it together!",
+        "Why did the bicycle fall over? Because it was two-tired!",
+        "What’s a computer’s favorite beat? An algorithm!",
+        "I used to play piano by ear, but now I use my hands.",
+        "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+        "What do you call a fake noodle? An impasta!",
+        "Why did the tomato turn red? Because it saw the salad dressing!",
+        "Parallel lines have so much in common. It’s a shame they’ll never meet!",
+        "Why don't skeletons fight each other? They don't have the guts!",
+        "What do you call a bear with no teeth? A gummy bear!"
+        // More jokes...
+      ];
+
+      var jokeTextBox = document.getElementById('jokeTextBox');
+      if (jokes.length > 0 && jokeTextBox) {
+        var randomIndex = Math.floor(Math.random() * jokes.length);
+        jokeTextBox.value = jokes[randomIndex];
+      } else {
+        jokeTextBox.value = "No jokes available!";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Randomizer Dashboard</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .dashboard {
+      display: none;
+    }
+    .generate-button {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="showDashboardButton" onclick="toggleDashboard()">Try Randomiser</button>
+
+  <div class="dashboard" id="dashboard">
+    <h2>Randomizer Dashboard</h2>
+    <p>Generate random numbers, text, and dates: if you want to close click once more at try button
+</p>
+    <input type="text" placeholder="Random Number"><br><br>
+    <input type="text" placeholder="Random Text"><br><br>
+    <input type="text" placeholder="Random Date (dd/mm/yyyy)"><br><br>
+    <button class="generate-button" onclick="generateAll()">Generate All</button>
+  </div>
+
+  <script>
+    function toggleDashboard() {
+      var dashboard = document.getElementById('dashboard');
+      if (dashboard) {
+        if (dashboard.style.display === 'none' || dashboard.style.display === '') {
+          dashboard.style.display = 'block';
+          document.querySelector('.generate-button').style.display = 'block';
+        } else {
+          dashboard.style.display = 'none';
+          document.querySelector('.generate-button').style.display = 'none';
+        }
+      }
+    }
+
+    function generateAll() {
+      var randomNumber = Math.floor(Math.random() * 1000); // Generate random number between 0 to 999
+      var randomText = Math.random().toString(36).substring(2, 15); // Generate random text
+      var randomDate = new Date(Math.random() * Date.now()).toLocaleDateString(); // Generate random date
+
+      document.querySelectorAll('.dashboard input')[0].value = randomNumber;
+      document.querySelectorAll('.dashboard input')[1].value = randomText;
+      document.querySelectorAll('.dashboard input')[2].value = randomDate;
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Beautifier</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .invisible-dashboard {
+      display: none;
+    }
+    /* Define styles for beautified text */
+    .beautified-text {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="toggleDashboard()">Text Beautifier</button>
+
+  <div class="invisible-dashboard" id="textBeautifier">
+    <!-- Six text boxes -->
+    <textarea id="textArea1" placeholder="Enter text here"></textarea>
+    <textarea id="textArea2" placeholder="Enter text here"></textarea>
+    <textarea id="textArea3" placeholder="Enter text here"></textarea>
+    <textarea id="textArea4" placeholder="Enter text here"></textarea>
+    <textarea id="textArea5" placeholder="Enter text here"></textarea>
+    <textarea id="textArea6" placeholder="Enter text here"></textarea>
+
+    <button onclick="beautifyText()">Beautify Text</button>
+    <button onclick="printText()">Print</button>
+    <button onclick="shareAsImage()">Share as Image</button>
+  </div>
+
+  <script>
+    function toggleDashboard() {
+      var dashboard = document.getElementById('textBeautifier');
+      if (dashboard) {
+        dashboard.style.display = dashboard.style.display === 'none' ? 'block' : 'none';
+      }
+    }
+
+    function beautifyText() {
+      // Logic to beautify text in text areas
+      // Example: add border and center alignment
+      var textAreas = document.querySelectorAll('textarea');
+      textAreas.forEach(function(textArea) {
+        textArea.classList.add('beautified-text');
+      });
+    }
+
+    function printText() {
+      // Logic to print text
+      // Example: open print dialog
+      window.print();
+    }
+
+    function shareAsImage() {
+      // Logic to share text as an image
+      // This operation requires more complex code involving image generation, canvas manipulation, etc.
+      // It cannot be achieved with simple HTML/JS in this scope.
+      alert('Sharing as image is a complex operation and cannot be demonstrated here.');
+    }
+  </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link Prank Generator</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .link-prank-dashboard {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="showLinkPrankDashboardButton" onclick="toggleLinkPrankDashboard()">Try Link Prank</button>
+
+  <div class="link-prank-dashboard" id="linkPrankDashboard">
+    <h2>Link Prank Generator</h2>
+    <input type="text" id="domainInput" placeholder="Enter Domain (e.g., example.com)"><br><br>
+    <input type="text" id="outputTextbox" placeholder="Output: /randomchars" readonly><br><br>
+    <button id="generateButton" onclick="generateLink()">Generate</button>
+  </div>
+
+  <script>
+    function toggleLinkPrankDashboard() {
+      var linkPrankDashboard = document.getElementById('linkPrankDashboard');
+      if (linkPrankDashboard) {
+        if (linkPrankDashboard.style.display === 'none' || linkPrankDashboard.style.display === '') {
+          linkPrankDashboard.style.display = 'block';
+        } else {
+          linkPrankDashboard.style.display = 'none';
+        }
+      }
+    }
+
+    function generateRandomString(length) {
+      var result = '';
+      var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var charactersLength = characters.length;
+      for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
+    }
+
+    function generateLink() {
+      var domain = document.getElementById('domainInput').value;
+      var outputTextbox = document.getElementById('outputTextbox');
+      if (domain && outputTextbox) {
+        var randomChars = generateRandomString(10); // Change 10 to set the desired length of random characters
+        outputTextbox.value = '/' + randomChars;
+      }
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worksheet for Kids</title>
+</head>
+<body>
+    <button onclick="downloadWorksheet()">Download Worksheet for Kids</button>
+
+    <script>
+        function downloadWorksheet() {
+            var link = document.createElement('a');
+            link.href = 'https://export-download.canva.com/tnEBU/DAF-KXtnEBU/22/0-3978224568047262434.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20240229%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240229T010729Z&X-Amz-Expires=37581&X-Amz-Signature=e3f69f7d86128d115acbabc5c4d4a07055c89165c51d4858d0f83aa6ca9dbb9a&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27nxtinstant%2520school.pdf&response-expires=Thu%2C%2029%20Feb%202024%2011%3A33%3A50%20GMT';
+            link.download = 'worksheet.pdf';
+            link.click();
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maths Game</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .math-game-dashboard {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="showMathGameDashboardButton" onclick="toggleMathGameDashboard()">Maths Game</button>
+
+  <div class="math-game-dashboard" id="mathGameDashboard">
+    <h2>Maths Game</h2>
+    <input type="number" id="minusInput" placeholder="Enter Answer for Subtraction"><br><br>
+    <input type="number" id="plusInput" placeholder="Enter Answer for Addition"><br><br>
+    <input type="number" id="multiplicationInput" placeholder="Enter Answer for Multiplication"><br><br>
+    <button onclick="generateQuestions()">Generate Questions</button>
+    <button onclick="checkAnswers()">Check Answers</button>
+  </div>
+
+  <script>
+    function toggleMathGameDashboard() {
+      var mathGameDashboard = document.getElementById('mathGameDashboard');
+      if (mathGameDashboard) {
+        if (mathGameDashboard.style.display === 'none' || mathGameDashboard.style.display === '') {
+          mathGameDashboard.style.display = 'block';
+        } else {
+          mathGameDashboard.style.display = 'none';
+        }
+      }
+    }
+
+    function generateRandomNumber() {
+      return Math.floor(Math.random() * 10); // Generates random numbers from 0 to 9
+    }
+
+    function generateQuestions() {
+      document.getElementById('minusInput').value = ''; // Clear previous answers
+      document.getElementById('plusInput').value = '';
+      document.getElementById('multiplicationInput').value = '';
+
+      var num1 = generateRandomNumber();
+      var num2 = generateRandomNumber();
+
+      // Set values for subtraction, addition, and multiplication questions
+      document.getElementById('minusInput').setAttribute('data-num1', num1);
+      document.getElementById('minusInput').setAttribute('data-num2', num2);
+      document.getElementById('plusInput').setAttribute('data-num1', num1);
+      document.getElementById('plusInput').setAttribute('data-num2', num2);
+      document.getElementById('multiplicationInput').setAttribute('data-num1', num1);
+      document.getElementById('multiplicationInput').setAttribute('data-num2', num2);
+
+      document.getElementById('minusInput').placeholder = `${num1} - ${num2} = ?`;
+      document.getElementById('plusInput').placeholder = `${num1} + ${num2} = ?`;
+      document.getElementById('multiplicationInput').placeholder = `${num1} * ${num2} = ?`;
+    }
+
+    function checkAnswers() {
+      var minusInput = document.getElementById('minusInput');
+      var plusInput = document.getElementById('plusInput');
+      var multiplicationInput = document.getElementById('multiplicationInput');
+
+      var minusResult = Number(minusInput.value);
+      var plusResult = Number(plusInput.value);
+      var multiplicationResult = Number(multiplicationInput.value);
+
+      var correctMinusAnswer = Number(minusInput.getAttribute('data-num1')) - Number(minusInput.getAttribute('data-num2'));
+      var correctPlusAnswer = Number(plusInput.getAttribute('data-num1')) + Number(plusInput.getAttribute('data-num2'));
+      var correctMultiplicationAnswer = Number(multiplicationInput.getAttribute('data-num1')) * Number(multiplicationInput.getAttribute('data-num2'));
+
+      if (minusResult === correctMinusAnswer && plusResult === correctPlusAnswer && multiplicationResult === correctMultiplicationAnswer) {
+        alert('All answers are correct!');
+      } else {
+        alert('One or more answers are incorrect. Try again!');
+      }
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+ button {
+      border: none;
+      background-color: blue;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: alias;
+      </style>
+    
+  <meta charset="UTF-8">
+  <title>Bindu Click Me</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .bindu-dashboard {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="showBinduDashboardButton" onclick="toggleBinduDashboard()">Bindu Click Me</button>
+
+  <div class="bindu-dashboard" id="binduDashboard">
+    <h2>Bindu Click Me</h2>
+    <input type="text" id="nameInput" placeholder="Enter Your Name">
+    <button onclick="showGreeting()">OK</button>
+  </div>
+
+  <script>
+    function toggleBinduDashboard() {
+      var binduDashboard = document.getElementById('binduDashboard');
+      if (binduDashboard) {
+        if (binduDashboard.style.display === 'none' || binduDashboard.style.display === '') {
+          binduDashboard.style.display = 'block';
+        } else {
+          binduDashboard.style.display = 'none';
+        }
+      }
+    }
+
+    function showGreeting() {
+      var name = document.getElementById('nameInput').value;
+      if (name) {
+        alert(`Hello, ${name}! Say hi to Siddhu and Bindu.`);
+        setTimeout(showPopup, 2000); // Show the popup after 2 seconds
+      }
+    }
+
+    function showPopup() {
+      var isAryansFriend = confirm("Are you Aryan's friend?");
+      if (isAryansFriend) {
+        alert("You are Aryan's friend!");
+      } else {
+        alert("You are not Aryan's friend! chal bhag iss site se nikal chal");
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .privacy-policy-btn {
+      border: none;
+      background-color: blue;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .privacy-policy-text {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+    .close-btn {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border: none;
+      background-color: #ff0000;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="privacy-policy-btn" onclick="togglePrivacyPolicy()">Privacy Policy</button>
+
+  <div class="privacy-policy-text" id="privacyPolicyText">
+    <p>
+      This Privacy Policy (“Privacy Policy/Policy”) discloses the privacy practices for M/s shri ram softwares pvt.ltd Pvt ltd (“Company”, “We/we” or “Us/us”) with regard to Your (“You/you” or “Your/your”) use of the nxtinstant (“Website”).This Privacy Policy along with Terms of Use describes our practices regarding, including your choices in relation to how we collect, store, use, share and secure your personal information across our Website. It also describes your choices regarding use, access and correction of your personal information and your rights in relation to your personal information and how to contact us or supervisory authorities in the event you have a complaint.
+
+By visiting this Website, you agree to be bound by the terms and conditions of this Privacy Policy and Terms of Use. Please read this Privacy Policy and Terms of Use carefully. By using the Website, you indicate that you understand, agree and consent to this Privacy Policy. If you do not agree with the terms of this Privacy Policy, please do not use/access this Website.
+
+We’ll review this Privacy Policy from time to time to make sure it is up-to-date. If you are just a visitor, then please note that this Privacy Policy is subject to change at any time without notice. To make sure you are aware of any changes, please review this Policy periodically.
+
+By Personal Data, we mean any information that can either itself identify you as an individual ("Personally Identifying Information ") or that can be connected to you indirectly by linking it to Personally Identifying Information M/S shri ram softwares pvt.ltd is owned by mr.aryan hitendra wankhede srs(shriram softwares is a parent company of nxtinstant)
+
+
+    </p>
+    <!-- Rest of the Privacy Policy content -->
+
+    <button class="close-btn" onclick="togglePrivacyPolicy()">Close</button>
+  </div>
+
+  <script>
+    function togglePrivacyPolicy() {
+      var privacyPolicyText = document.getElementById('privacyPolicyText');
+      if (privacyPolicyText) {
+        privacyPolicyText.style.display = privacyPolicyText.style.display === 'none' ? 'block' : 'none';
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Bugs</title>
+</head>
+<body>
+  <button onclick="openBugReport()">I found bugs</button>
+
+  <script>
+    function openBugReport() {
+      window.open('https://getform.io/thank-you?id=70232725-82d4-480a-846f-435a3a099440', '_blank');
+    }
+  </script>
+</body>
+</html>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Bugs</title>
+</head>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome User</title>
+  <script>
+    window.onload = function() {
+      var userName = prompt("Please enter your name🗿:");
+      if (userName != null && userName != "") {
+        alert("Welcome, " + userName + "!");
+      }
+    };
+  </script>
+</head>
+<body>
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News Section</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    /* Style for the sidebar */
+    .sidebar {
+      width: 200px;
+      background-color: #f2f2f2;
+      padding: 10px;
+      float: left;
+background-color: yellow
+    }
+    .main-content {
+      margin-left: 220px; /* Adjust based on sidebar width and spacing */
+      /* Other styles for main content */
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <!-- Left Sidebar Content -->
+    <h2>Latest News</h2>
+    <ul>
+      <li> wow! nxtinstant released a new offer got to our mail and mail this code: 128565. Jai Shree Ram</li>
+      <li>A major hacker group has issued a warning, planning to attack Indian websites and critical systems soon. To tackle this, government departments are urgently boosting their online defenses following strict cybersecurity guidelines. Courtesy: blog.npav.net</li>
+      <!-- Add more news items as needed -->
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <!-- Main Content Area -->
+    
+    <!-- Your main content goes here -->
+  </div>
+
+  <!-- Footer section -->
+  <!-- ... -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .error-message {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <!-- Content will be dynamically generated here -->
+    </div>
+
+    <script>
+        // Function to extract the path from the URL
+        function getPathFromUrl(url) {
+            return url.split('/').pop();
+        }
+
+        // Main function to handle routing and error display
+        function handleRouting() {
+            var path = getPathFromUrl(window.location.href);
+
+            if (path === "" || path === "shriramsoftwarespvtltd" || path === "aryanwankhede") {
+                // Handle valid paths here
+                document.getElementById('content').innerHTML = "connected to official servers........";
+            } else {
+                // Handle error for other paths
+                document.getElementById('content').innerHTML = "<h1 class='error-message'>Error 404 - Page Not Found</h1><p><strong>Error Code:</strong> 404</p><p>The page you are looking for does not exist. endpoint connection broke please try nxtinstant.in</p>";
+            }
+        }
+
+        // Call the routing function when the page loads
+        window.onload = handleRouting;
+    </script>
+</body>
+</html>
+
+
+
+<html lang="en">
+
+<head>
+  <div class="container">
+   <title>aryan wankhede</title>  
+<p>jai shree ram</p>
+      <h1> Aryan Wankhede</h1>
+    </div>
+
+    <div class="bio">
+      <p>aryan naam toh suna hi hoga</p>
+    </div>
+
+    <div class="buttons">
+      <a href="https://www.youtube.com/@officialnxtinstant" class="button">My YouTube Channel</a>
+      <a href="mailto:aryanwankhede1211@gmail.com" class="button">Mail</a>
+      <a href="https://github.com/Nxtinstant/" class="button">My GitHub</a>
+      <a href="https://codepen.io/nxtinstant/" class="button">More Projects</a>
+      
+  
+</head>
+</html>
+
+
+
+
+
+
+
+
+
+</head>
+</html>
+
+
+
+
+
+ 
+
+  </div>
+<a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-stamp-blue-90x90.png" width="90" height="90" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page. varna chappal phek ke marunga" /></a>
+
+</html>
+<!-- Begin of Chaport Live Chat code -->
+<script type="text/javascript">
+(function(w,d,v3){
+w.chaportConfig = {
+appId : '6381ee56509a13227106678a'
+};
+
+if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
+</script>
+<!-- End of Chaport Live Chat code -->
+
+
+
+<head>
+<style>
+.container {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: orange; 
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+}
+
+.bio {
+  background-color: #006400; /* Dark Green */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 5px auto;
+  text-decoration: none;
+  background-color: #C0C0C0; /* Light Green Teal */
+  color: cyan;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #008080; /* Darker Green Teal on hover */
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: red;
+}
+
+p {
+   text-align: center;
+
+}
+
+h1 {
+
+text-align: center;
+
+}
+
+
+.input-field {
+      margin-bottom: 10px;
+  align: center;
+    }
+
+    .result-section {
+      display: none;
+      margin-top: 20px;
+    }
+
+</style>
+</head>
+
+
+
+
+<a href="https://nxtinstant.in/"><img src="https://iili.io/JMlobHl.th.webp" alt="JMlobHl.th.webp" border="0"></a>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>This site is under construction. Please visit again to check the status. thanks!</p>
+    <p class="hidden">Click <a href="#">here</a> to go back to the previous page.</p>
+    <p class="hidden">Powered by Rediffmail Enterprise</p>
+    <p class="hidden">Visit Rediffmail Enterprise and get best deals on Domain Registration</p>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: colorChange 2s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: blue;
+            }
+            50% {
+                color: black;
+            }
+            100% {
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- Your main content here -->
+        
+    </div>
+
+    <footer>
+        2024 M/S "SHRI RAM SOFTWARES Pvt.Ltd. all rights reserved aryan hitendra wankhede. jai shree ram"
+    </footer>
+</body>
+</html>
+
+<h1>aryan's childhood photo</h1>
+<style>h1 {
+ align: center
+}</style>
+
+<a href="https://freeimage.host/"><img src="https://iili.io/JVsPmfS.jpg" alt="JVsPmfS.jpg" border="1"></a>
+ml lang="en">
+<head>
+<title>nxtinstant=sigma</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: orange;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: red;
+  color: black;
+}
+</style>
+
+</head>
+
+<div class="header">
+  <h1>nxtinstant</h1>
+
+
+</div>
+
+<div class="topnav">
+
+
+<a href="nxtinstant.in">home</a>
+
+<a href="https://docs.google.com/document/d/1czeU1e8xbGYMNoXkzelwi11gJ7JgDn95Jnpw1Q85K3E/edit?usp=sharing">information</a>
+
+
+  <a href="linktr.ee/a319spaces">buy 1 hour html file</a>
+  <a href="https://codepen.io/nxtinstant/full/poqjQNZ">try database project</a>
+  <a href="youtube.com/@officialnxtinstant">youtube</a>
+
+<a
+href="https://www.patreon.com/nxtinstant">patreon</a>
+
+</div>
+
+<div id="ratingPopup" class="popup" style="display: none;">
+  <h2>Love using nxtinstant? Give us feedback!</h2>
+  <div id="stars">
+    <span class="star" data-value="1">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="5">&#9733;</span>
+  </div>
+  <button id="closePopup">Close</button>
+</div>
+
+<style>.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star:hover {
+  color: gold;
+}
+</style>
+
+<script>// Call showRatingPopup directly
+showRatingPopup();
+
+function showRatingPopup() {
+  var popup = document.getElementById('ratingPopup');
+  if (popup) {
+    popup.style.display = 'block';
+
+    var stars = document.querySelectorAll('.star');
+    stars.forEach(function(star) {
+      star.addEventListener('click', function() {
+        var rating = parseInt(this.getAttribute('data-value'));
+        handleRating(rating);
+      });
+    });
+
+    var closePopupBtn = document.getElementById('closePopup');
+    closePopupBtn.addEventListener('click', function() {
+      popup.style.display = 'none';
+    });
+  } else {
+    console.error('Popup element not found.');
+  }
+}
+
+function handleRating(rating) {
+  var popup = document.getElementById('ratingPopup');
+  if (popup) {
+    popup.style.display = 'none';
+
+    switch (rating) {
+      case 1:
+        alert("Okay, not bad.");
+        break;
+      case 5:
+        alert("Wow, thank youuuuuuuu!");
+        break;
+      default:
+        alert("Thank you for your feedback!");
+        break;
+    }
+  } else {
+    console.error('Popup element not found.');
+  }
+}
+
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+  <meta charset="UTF-8">
+  <title>aryan sabka daddy</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .joke-dashboard {
+      display: none;
+    }
+    #jokeTextBox {
+      width: 80%;
+      height: 100px; /* Adjust the height as needed */
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="showJokeDashboardButton" onclick="toggleJokeDashboard()">Jokes Generator</button>
+
+  <div class="joke-dashboard" id="jokeDashboard">
+    <h2>Jokes Generator</h2>
+    <textarea id="jokeTextBox" placeholder="Generated Joke" readonly></textarea><br><br>
+    <button onclick="generateJoke()">Generate Joke</button>
+  </div>
+
+  <script>
+    function toggleJokeDashboard() {
+      var jokeDashboard = document.getElementById('jokeDashboard');
+      if (jokeDashboard) {
+        if (jokeDashboard.style.display === 'none' || jokeDashboard.style.display === '') {
+          jokeDashboard.style.display = 'block';
+        } else {
+          jokeDashboard.style.display = 'none';
+        }
+      }
+    }
+
+    function generateJoke() {
+      var jokes = [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "Parallel lines have so much in common. It's a shame they'll never meet.", "Why don't scientists trust atoms? Because they make up everything!",
+        "Parallel lines have so much in common. It's a shame they'll never meet.",
+        "Why did the scarecrow win an award? Because he was outstanding in his field!",
+        "What do you get when you cross a snowman with a vampire? Frostbite!",
+        "I told my wife she should embrace her mistakes. She gave me a hug.",
+        "What do you call an alligator in a vest? An investigator!",
+        "Why don’t skeletons fight each other? They don’t have the guts.",
+        "How does a penguin build its house? Igloos it together!",
+        "Why did the bicycle fall over? Because it was two-tired!",
+        "What’s a computer’s favorite beat? An algorithm!",
+        "I used to play piano by ear, but now I use my hands.",
+        "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+        "What do you call a fake noodle? An impasta!",
+        "Why did the tomato turn red? Because it saw the salad dressing!",
+        "Parallel lines have so much in common. It’s a shame they’ll never meet!",
+        "Why don't skeletons fight each other? They don't have the guts!",
+        "What do you call a bear with no teeth? A gummy bear!"
+        // More jokes...
+      ];
+
+      var jokeTextBox = document.getElementById('jokeTextBox');
+      if (jokes.length > 0 && jokeTextBox) {
+        var randomIndex = Math.floor(Math.random() * jokes.length);
+        jokeTextBox.value = jokes[randomIndex];
+      } else {
+        jokeTextBox.value = "No jokes available!";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Randomizer Dashboard</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .dashboard {
+      display: none;
+    }
+    .generate-button {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="showDashboardButton" onclick="toggleDashboard()">Try Randomiser</button>
+
+  <div class="dashboard" id="dashboard">
+    <h2>Randomizer Dashboard</h2>
+    <p>Generate random numbers, text, and dates: if you want to close click once more at try button
+</p>
+    <input type="text" placeholder="Random Number"><br><br>
+    <input type="text" placeholder="Random Text"><br><br>
+    <input type="text" placeholder="Random Date (dd/mm/yyyy)"><br><br>
+    <button class="generate-button" onclick="generateAll()">Generate All</button>
+  </div>
+
+  <script>
+    function toggleDashboard() {
+      var dashboard = document.getElementById('dashboard');
+      if (dashboard) {
+        if (dashboard.style.display === 'none' || dashboard.style.display === '') {
+          dashboard.style.display = 'block';
+          document.querySelector('.generate-button').style.display = 'block';
+        } else {
+          dashboard.style.display = 'none';
+          document.querySelector('.generate-button').style.display = 'none';
+        }
+      }
+    }
+
+    function generateAll() {
+      var randomNumber = Math.floor(Math.random() * 1000); // Generate random number between 0 to 999
+      var randomText = Math.random().toString(36).substring(2, 15); // Generate random text
+      var randomDate = new Date(Math.random() * Date.now()).toLocaleDateString(); // Generate random date
+
+      document.querySelectorAll('.dashboard input')[0].value = randomNumber;
+      document.querySelectorAll('.dashboard input')[1].value = randomText;
+      document.querySelectorAll('.dashboard input')[2].value = randomDate;
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Beautifier</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .invisible-dashboard {
+      display: none;
+    }
+    /* Define styles for beautified text */
+    .beautified-text {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="toggleDashboard()">Text Beautifier</button>
+
+  <div class="invisible-dashboard" id="textBeautifier">
+    <!-- Six text boxes -->
+    <textarea id="textArea1" placeholder="Enter text here"></textarea>
+    <textarea id="textArea2" placeholder="Enter text here"></textarea>
+    <textarea id="textArea3" placeholder="Enter text here"></textarea>
+    <textarea id="textArea4" placeholder="Enter text here"></textarea>
+    <textarea id="textArea5" placeholder="Enter text here"></textarea>
+    <textarea id="textArea6" placeholder="Enter text here"></textarea>
+
+    <button onclick="beautifyText()">Beautify Text</button>
+    <button onclick="printText()">Print</button>
+    <button onclick="shareAsImage()">Share as Image</button>
+  </div>
+
+  <script>
+    function toggleDashboard() {
+      var dashboard = document.getElementById('textBeautifier');
+      if (dashboard) {
+        dashboard.style.display = dashboard.style.display === 'none' ? 'block' : 'none';
+      }
+    }
+
+    function beautifyText() {
+      // Logic to beautify text in text areas
+      // Example: add border and center alignment
+      var textAreas = document.querySelectorAll('textarea');
+      textAreas.forEach(function(textArea) {
+        textArea.classList.add('beautified-text');
+      });
+    }
+
+    function printText() {
+      // Logic to print text
+      // Example: open print dialog
+      window.print();
+    }
+
+    function shareAsImage() {
+      // Logic to share text as an image
+      // This operation requires more complex code involving image generation, canvas manipulation, etc.
+      // It cannot be achieved with simple HTML/JS in this scope.
+      alert('Sharing as image is a complex operation and cannot be demonstrated here.');
+    }
+  </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link Prank Generator</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .link-prank-dashboard {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="showLinkPrankDashboardButton" onclick="toggleLinkPrankDashboard()">Try Link Prank</button>
+
+  <div class="link-prank-dashboard" id="linkPrankDashboard">
+    <h2>Link Prank Generator</h2>
+    <input type="text" id="domainInput" placeholder="Enter Domain (e.g., example.com)"><br><br>
+    <input type="text" id="outputTextbox" placeholder="Output: /randomchars" readonly><br><br>
+    <button id="generateButton" onclick="generateLink()">Generate</button>
+  </div>
+
+  <script>
+    function toggleLinkPrankDashboard() {
+      var linkPrankDashboard = document.getElementById('linkPrankDashboard');
+      if (linkPrankDashboard) {
+        if (linkPrankDashboard.style.display === 'none' || linkPrankDashboard.style.display === '') {
+          linkPrankDashboard.style.display = 'block';
+        } else {
+          linkPrankDashboard.style.display = 'none';
+        }
+      }
+    }
+
+    function generateRandomString(length) {
+      var result = '';
+      var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var charactersLength = characters.length;
+      for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
+    }
+
+    function generateLink() {
+      var domain = document.getElementById('domainInput').value;
+      var outputTextbox = document.getElementById('outputTextbox');
+      if (domain && outputTextbox) {
+        var randomChars = generateRandomString(10); // Change 10 to set the desired length of random characters
+        outputTextbox.value = '/' + randomChars;
+      }
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worksheet for Kids</title>
+</head>
+<body>
+    <button onclick="downloadWorksheet()">Download Worksheet for Kids</button>
+
+    <script>
+        function downloadWorksheet() {
+            var link = document.createElement('a');
+            link.href = 'https://export-download.canva.com/tnEBU/DAF-KXtnEBU/22/0-3978224568047262434.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20240229%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240229T010729Z&X-Amz-Expires=37581&X-Amz-Signature=e3f69f7d86128d115acbabc5c4d4a07055c89165c51d4858d0f83aa6ca9dbb9a&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27nxtinstant%2520school.pdf&response-expires=Thu%2C%2029%20Feb%202024%2011%3A33%3A50%20GMT';
+            link.download = 'worksheet.pdf';
+            link.click();
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maths Game</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .math-game-dashboard {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="showMathGameDashboardButton" onclick="toggleMathGameDashboard()">Maths Game</button>
+
+  <div class="math-game-dashboard" id="mathGameDashboard">
+    <h2>Maths Game</h2>
+    <input type="number" id="minusInput" placeholder="Enter Answer for Subtraction"><br><br>
+    <input type="number" id="plusInput" placeholder="Enter Answer for Addition"><br><br>
+    <input type="number" id="multiplicationInput" placeholder="Enter Answer for Multiplication"><br><br>
+    <button onclick="generateQuestions()">Generate Questions</button>
+    <button onclick="checkAnswers()">Check Answers</button>
+  </div>
+
+  <script>
+    function toggleMathGameDashboard() {
+      var mathGameDashboard = document.getElementById('mathGameDashboard');
+      if (mathGameDashboard) {
+        if (mathGameDashboard.style.display === 'none' || mathGameDashboard.style.display === '') {
+          mathGameDashboard.style.display = 'block';
+        } else {
+          mathGameDashboard.style.display = 'none';
+        }
+      }
+    }
+
+    function generateRandomNumber() {
+      return Math.floor(Math.random() * 10); // Generates random numbers from 0 to 9
+    }
+
+    function generateQuestions() {
+      document.getElementById('minusInput').value = ''; // Clear previous answers
+      document.getElementById('plusInput').value = '';
+      document.getElementById('multiplicationInput').value = '';
+
+      var num1 = generateRandomNumber();
+      var num2 = generateRandomNumber();
+
+      // Set values for subtraction, addition, and multiplication questions
+      document.getElementById('minusInput').setAttribute('data-num1', num1);
+      document.getElementById('minusInput').setAttribute('data-num2', num2);
+      document.getElementById('plusInput').setAttribute('data-num1', num1);
+      document.getElementById('plusInput').setAttribute('data-num2', num2);
+      document.getElementById('multiplicationInput').setAttribute('data-num1', num1);
+      document.getElementById('multiplicationInput').setAttribute('data-num2', num2);
+
+      document.getElementById('minusInput').placeholder = `${num1} - ${num2} = ?`;
+      document.getElementById('plusInput').placeholder = `${num1} + ${num2} = ?`;
+      document.getElementById('multiplicationInput').placeholder = `${num1} * ${num2} = ?`;
+    }
+
+    function checkAnswers() {
+      var minusInput = document.getElementById('minusInput');
+      var plusInput = document.getElementById('plusInput');
+      var multiplicationInput = document.getElementById('multiplicationInput');
+
+      var minusResult = Number(minusInput.value);
+      var plusResult = Number(plusInput.value);
+      var multiplicationResult = Number(multiplicationInput.value);
+
+      var correctMinusAnswer = Number(minusInput.getAttribute('data-num1')) - Number(minusInput.getAttribute('data-num2'));
+      var correctPlusAnswer = Number(plusInput.getAttribute('data-num1')) + Number(plusInput.getAttribute('data-num2'));
+      var correctMultiplicationAnswer = Number(multiplicationInput.getAttribute('data-num1')) * Number(multiplicationInput.getAttribute('data-num2'));
+
+      if (minusResult === correctMinusAnswer && plusResult === correctPlusAnswer && multiplicationResult === correctMultiplicationAnswer) {
+        alert('All answers are correct!');
+      } else {
+        alert('One or more answers are incorrect. Try again!');
+      }
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+ button {
+      border: none;
+      background-color: blue;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: alias;
+      </style>
+    
+  <meta charset="UTF-8">
+  <title>Bindu Click Me</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .bindu-dashboard {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="showBinduDashboardButton" onclick="toggleBinduDashboard()">Bindu Click Me</button>
+
+  <div class="bindu-dashboard" id="binduDashboard">
+    <h2>Bindu Click Me</h2>
+    <input type="text" id="nameInput" placeholder="Enter Your Name">
+    <button onclick="showGreeting()">OK</button>
+  </div>
+
+  <script>
+    function toggleBinduDashboard() {
+      var binduDashboard = document.getElementById('binduDashboard');
+      if (binduDashboard) {
+        if (binduDashboard.style.display === 'none' || binduDashboard.style.display === '') {
+          binduDashboard.style.display = 'block';
+        } else {
+          binduDashboard.style.display = 'none';
+        }
+      }
+    }
+
+    function showGreeting() {
+      var name = document.getElementById('nameInput').value;
+      if (name) {
+        alert(`Hello, ${name}! Say hi to Siddhu and Bindu.`);
+        setTimeout(showPopup, 2000); // Show the popup after 2 seconds
+      }
+    }
+
+    function showPopup() {
+      var isAryansFriend = confirm("Are you Aryan's friend?");
+      if (isAryansFriend) {
+        alert("You are Aryan's friend!");
+      } else {
+        alert("You are not Aryan's friend! chal bhag iss site se nikal chal");
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    .privacy-policy-btn {
+      border: none;
+      background-color: blue;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .privacy-policy-text {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+    .close-btn {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border: none;
+      background-color: #ff0000;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="privacy-policy-btn" onclick="togglePrivacyPolicy()">Privacy Policy</button>
+
+  <div class="privacy-policy-text" id="privacyPolicyText">
+    <p>
+      This Privacy Policy (“Privacy Policy/Policy”) discloses the privacy practices for M/s shri ram softwares pvt.ltd Pvt ltd (“Company”, “We/we” or “Us/us”) with regard to Your (“You/you” or “Your/your”) use of the nxtinstant (“Website”).This Privacy Policy along with Terms of Use describes our practices regarding, including your choices in relation to how we collect, store, use, share and secure your personal information across our Website. It also describes your choices regarding use, access and correction of your personal information and your rights in relation to your personal information and how to contact us or supervisory authorities in the event you have a complaint.
+
+By visiting this Website, you agree to be bound by the terms and conditions of this Privacy Policy and Terms of Use. Please read this Privacy Policy and Terms of Use carefully. By using the Website, you indicate that you understand, agree and consent to this Privacy Policy. If you do not agree with the terms of this Privacy Policy, please do not use/access this Website.
+
+We’ll review this Privacy Policy from time to time to make sure it is up-to-date. If you are just a visitor, then please note that this Privacy Policy is subject to change at any time without notice. To make sure you are aware of any changes, please review this Policy periodically.
+
+By Personal Data, we mean any information that can either itself identify you as an individual ("Personally Identifying Information ") or that can be connected to you indirectly by linking it to Personally Identifying Information M/S shri ram softwares pvt.ltd is owned by mr.aryan hitendra wankhede srs(shriram softwares is a parent company of nxtinstant)
+
+
+    </p>
+    <!-- Rest of the Privacy Policy content -->
+
+    <button class="close-btn" onclick="togglePrivacyPolicy()">Close</button>
+  </div>
+
+  <script>
+    function togglePrivacyPolicy() {
+      var privacyPolicyText = document.getElementById('privacyPolicyText');
+      if (privacyPolicyText) {
+        privacyPolicyText.style.display = privacyPolicyText.style.display === 'none' ? 'block' : 'none';
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Bugs</title>
+</head>
+<body>
+  <button onclick="openBugReport()">I found bugs</button>
+
+  <script>
+    function openBugReport() {
+      window.open('https://getform.io/thank-you?id=70232725-82d4-480a-846f-435a3a099440', '_blank');
+    }
+  </script>
+</body>
+</html>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Bugs</title>
+</head>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome User</title>
+  <script>
+    window.onload = function() {
+      var userName = prompt("Please enter your name🗿:");
+      if (userName != null && userName != "") {
+        alert("Welcome, " + userName + "!");
+      }
+    };
+  </script>
+</head>
+<body>
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News Section</title>
+  <style>
+    /* Your existing styles */
+    /* ... */
+    /* Style for the sidebar */
+    .sidebar {
+      width: 200px;
+      background-color: #f2f2f2;
+      padding: 10px;
+      float: left;
+background-color: yellow
+    }
+    .main-content {
+      margin-left: 220px; /* Adjust based on sidebar width and spacing */
+      /* Other styles for main content */
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <!-- Left Sidebar Content -->
+    <h2>Latest News</h2>
+    <ul>
+      <li> wow! nxtinstant released a new offer got to our mail and mail this code: 128565. Jai Shree Ram</li>
+      <li>A major hacker group has issued a warning, planning to attack Indian websites and critical systems soon. To tackle this, government departments are urgently boosting their online defenses following strict cybersecurity guidelines. Courtesy: blog.npav.net</li>
+      <!-- Add more news items as needed -->
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <!-- Main Content Area -->
+    
+    <!-- Your main content goes here -->
+  </div>
+
+  <!-- Footer section -->
+  <!-- ... -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .error-message {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <!-- Content will be dynamically generated here -->
+    </div>
+
+    <script>
+        // Function to extract the path from the URL
+        function getPathFromUrl(url) {
+            return url.split('/').pop();
+        }
+
+        // Main function to handle routing and error display
+        function handleRouting() {
+            var path = getPathFromUrl(window.location.href);
+
+            if (path === "" || path === "shriramsoftwarespvtltd" || path === "aryanwankhede") {
+                // Handle valid paths here
+                document.getElementById('content').innerHTML = "connected to official servers........";
+            } else {
+                // Handle error for other paths
+                document.getElementById('content').innerHTML = "<h1 class='error-message'>Error 404 - Page Not Found</h1><p><strong>Error Code:</strong> 404</p><p>The page you are looking for does not exist. endpoint connection broke please try nxtinstant.in</p>";
+            }
+        }
+
+        // Call the routing function when the page loads
+        window.onload = handleRouting;
+    </script>
+</body>
+</html>
+
+
+
+<html lang="en">
+
+<head>
+  <div class="container">
+   <title>aryan wankhede</title>  
+<p>jai shree ram</p>
+      <h1> Aryan Wankhede</h1>
+    </div>
+
+    <div class="bio">
+      <p>aryan naam toh suna hi hoga</p>
+    </div>
+
+    <div class="buttons">
+      <a href="https://www.youtube.com/@officialnxtinstant" class="button">My YouTube Channel</a>
+      <a href="mailto:aryanwankhede1211@gmail.com" class="button">Mail</a>
+      <a href="https://github.com/Nxtinstant/" class="button">My GitHub</a>
+      <a href="https://codepen.io/nxtinstant/" class="button">More Projects</a>
+      
+  
+</head>
+</html>
+
+
+
+
+
+
+
+
+
+</head>
+</html>
+
+
+
+
+
+ 
+
+  </div>
+<a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-stamp-blue-90x90.png" width="90" height="90" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page. varna chappal phek ke marunga" /></a>
+
+</html>
+<!-- Begin of Chaport Live Chat code -->
+<script type="text/javascript">
+(function(w,d,v3){
+w.chaportConfig = {
+appId : '6381ee56509a13227106678a'
+};
+
+if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
+</script>
+<!-- End of Chaport Live Chat code -->
+
+
+
+<head>
+<style>
+.container {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: orange; 
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+}
+
+.bio {
+  background-color: #006400; /* Dark Green */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 5px auto;
+  text-decoration: none;
+  background-color: #C0C0C0; /* Light Green Teal */
+  color: cyan;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #008080; /* Darker Green Teal on hover */
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: red;
+}
+
+p {
+   text-align: center;
+
+}
+
+h1 {
+
+text-align: center;
+
+}
+
+
+.input-field {
+      margin-bottom: 10px;
+  align: center;
+    }
+
+    .result-section {
+      display: none;
+      margin-top: 20px;
+    }
+
+</style>
+</head>
+
+
+
+
+<a href="https://nxtinstant.in/"><img src="https://iili.io/JMlobHl.th.webp" alt="JMlobHl.th.webp" border="0"></a>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>This site is under construction. Please visit again to check the status. thanks!</p>
+    <p class="hidden">Click <a href="#">here</a> to go back to the previous page.</p>
+    <p class="hidden">Powered by Rediffmail Enterprise</p>
+    <p class="hidden">Visit Rediffmail Enterprise and get best deals on Domain Registration</p>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: colorChange 2s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: blue;
+            }
+            50% {
+                color: black;
+            }
+            100% {
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- Your main content here -->
+        
+    </div>
+
+    <footer>
+        2024 M/S "SHRI RAM SOFTWARES Pvt.Ltd. all rights reserved aryan hitendra wankhede. jai shree ram"
+    </footer>
+</body>
+</html>
+
+<h1>aryan's childhood photo</h1>
+<style>h1 {
+ align: center
+}</style>
+
+<a href="https://freeimage.host/"><img src="https://iili.io/JVsPmfS.jpg" alt="JVsPmfS.jpg" border="1"></a>
